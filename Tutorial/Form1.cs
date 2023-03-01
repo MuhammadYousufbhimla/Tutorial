@@ -4,7 +4,7 @@ namespace Tutorial
     {
 
         int a = 1;
-        int a = 1;
+        int a1 = 1;
         public Form1()
         {
             InitializeComponent();
