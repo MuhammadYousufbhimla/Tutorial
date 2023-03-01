@@ -18,7 +18,7 @@ namespace Tutorial
         {
             String name;
             name = txtname.Text;
-            MessageBox.Show("Add Record" +name);
+            MessageBox.Show("Add Recoxrd" +name);
         }
     }
 }
