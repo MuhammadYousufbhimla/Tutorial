@@ -56,5 +56,15 @@ namespace Tutorial
             txtgender.Text = "";
             txtfees.Clear();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           /* Form5.sname.ToString();
+            Form5.sage.ToString();*/
+
+            MessageBox.Show(Form5.sname+ Form5.sage);
+
+           
+        }
     }
 }
