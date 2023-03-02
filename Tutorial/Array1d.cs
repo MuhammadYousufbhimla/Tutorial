@@ -27,6 +27,7 @@ namespace Tutorial
         {
             name[i] = txtname.Text;
             Rollno[i] = int.Parse(txtrollno.Text);
+            MessageBox.Show("Add Record Successsfully");
             i++;
          
         }
