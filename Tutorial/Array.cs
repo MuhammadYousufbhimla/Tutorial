@@ -62,7 +62,7 @@ namespace Tutorial
                 txtfname.Text = fname[0];
                 txtage.Text = age[0];
                 txtfees.Text = fees[0];
-                txtgender.Text =gender[0];
+                txtgender.Text = gender[0];
 
                 Recorddisplay = "2";
 

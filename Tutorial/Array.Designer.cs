@@ -51,6 +51,7 @@
             button3.TabIndex = 26;
             button3.Text = "Clear";
             button3.UseVisualStyleBackColor = true;
+            button3.Visible = false;
             // 
             // txtfees
             // 
