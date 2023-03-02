@@ -39,15 +39,50 @@ namespace Tutorial
 
         private void button1_Click(object sender, EventArgs e)
         {
-            rollno.Add(int.Parse(txtrollno.Text));
-            name.Add(txtname.Text);
-            fname.Add(txtfname.Text);
-            age.Add(txtage.Text);
-            gender.Add(txtgender.Text);
-            fees.Add(txtfees.Text);
-            clearcode();
-            MessageBox.Show("Add Record Successfully...");
-        }
+            int search = rollno.FindIndex(r => r == int.Parse(txtrollno.Text));
+
+            if (search != -1)
+            {
+                rollno.RemoveAt(search);
+                name.RemoveAt(search);
+                fname.RemoveAt(search);
+                age.RemoveAt(search);
+                gender.RemoveAt(search);
+                fees.RemoveAt(search);
+
+
+                rollno.Insert(search, int.Parse(txtrollno.Text));
+                name.Insert(search, txtname.Text);
+                fname.Insert(search, txtfname.Text);
+                fees.Insert(search, txtfees.Text);
+                gender.Insert(search, txtgender.Text);
+                age.Insert(search, txtage.Text);
+
+
+
+
+            }
+            else
+            {
+                rollno.Add(int.Parse(txtrollno.Text));
+                name.Add(txtname.Text);
+                fname.Add(txtfname.Text);
+                age.Add(txtage.Text);
+                gender.Add(txtgender.Text);
+                fees.Add(txtfees.Text);
+
+
+            }
+        
+        /*  rollno.Add(int.Parse(txtrollno.Text));
+          name.Add(txtname.Text);
+          fname.Add(txtfname.Text);
+          age.Add(txtage.Text);
+          gender.Add(txtgender.Text);
+          fees.Add(txtfees.Text);
+          clearcode();
+          MessageBox.Show("Add Record Successfully...");*/
+    }
 
         private void button2_Click(object sender, EventArgs e)
         {
