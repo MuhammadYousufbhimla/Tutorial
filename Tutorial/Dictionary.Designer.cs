@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(530, 305);
+            ClientSize = new Size(519, 298);
             Controls.Add(txtcity);
             Controls.Add(label6);
             Controls.Add(button4);
@@ -125,6 +125,7 @@
             Controls.Add(button1);
             Name = "Dictionary";
             Text = "Dictionary";
+            Load += Dictionary_Load;
             ResumeLayout(false);
             PerformLayout();
         }

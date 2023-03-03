@@ -73,5 +73,10 @@ namespace Tutorial
                 MessageBox.Show("Record not found in Dictionary");
             }
         }
+
+        private void Dictionary_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
