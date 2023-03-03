@@ -14,6 +14,7 @@ namespace Tutorial
     public partial class Dictionary : Form
     {
         Dictionary<int, string> discity = new Dictionary<int, string>();
+
         public Dictionary()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Tutorial
         }
         private void clear()
         {
+
             txtcity.Clear();
             txtname.Clear();
 
