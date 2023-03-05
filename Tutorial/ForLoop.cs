@@ -58,5 +58,37 @@ namespace Tutorial
             }
             label5.Text = result;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int no_table = int.Parse(txtnotable.Text);
+            int start_tabel = int.Parse(txtstarttable.Text);
+            int end_table = int.Parse(txtendtable.Text);
+            String result = "";
+            int count = 1;
+            while (count <= end_table)
+            {
+                result = result + (no_table).ToString() + "X" + (count).ToString() + "=" + (count * no_table).ToString() + Environment.NewLine;
+                count++;
+            }
+            label5.Text = result;
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int table = 2;
+            int count = 1;
+            String result="";
+            do
+            {
+                result = result + ( table +"X"+count +"="+table * count +Environment.NewLine);
+                count++;
+            } while (count <= 10);
+            label4.Text = result;
+
+
+        }
     }
 }
