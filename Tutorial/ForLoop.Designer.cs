@@ -36,6 +36,9 @@
             txtendtable = new TextBox();
             label3 = new Label();
             label4 = new Label();
+            button2 = new Button();
+            label5 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -49,7 +52,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(141, 209);
+            button1.Location = new Point(38, 209);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
@@ -105,11 +108,42 @@
             label4.TabIndex = 7;
             label4.Text = "showtable";
             // 
+            // button2
+            // 
+            button2.Location = new Point(152, 209);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 8;
+            button2.Text = "Foreach";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(425, 93);
+            label5.Name = "label5";
+            label5.Size = new Size(75, 15);
+            label5.TabIndex = 9;
+            label5.Text = "showforeach";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(290, 209);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 10;
+            button3.Text = "Whileloop";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // ForLoop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(527, 297);
+            Controls.Add(button3);
+            Controls.Add(label5);
+            Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(txtendtable);
             Controls.Add(label3);
@@ -134,5 +168,8 @@
         private TextBox txtendtable;
         private Label label3;
         private Label label4;
+        private Button button2;
+        private Label label5;
+        private Button button3;
     }
 }

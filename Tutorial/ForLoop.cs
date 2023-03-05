@@ -31,8 +31,32 @@ namespace Tutorial
 
             }
             label4.Text = result;
-       
+
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<String> lstname = new List<string>();
+            String result = "";
+            lstname.Add("Muhammad");
+            lstname.Add("Yousuf");
+
+            lstname.Add("Asad");
+            lstname.Add("Saleem");
+
+            foreach (String name in lstname)
+            {
+                if (name.ToLower() == "Muhammad")
+                {
+                    MessageBox.Show("Equal name");
+                }
+                else
+                {
+                    MessageBox.Show("Not Equal name");
+                }
+                result = result + name + Environment.NewLine;
+            }
+            label5.Text = result;
+        }
     }
 }
