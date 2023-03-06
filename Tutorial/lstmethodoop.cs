@@ -70,5 +70,16 @@ namespace Tutorial
         {
             Student.clearcontrol(this);
         }
+
+        private void lstmethodoop_Load(object sender, EventArgs e)
+        {
+            Student.EDcontrols(this, false);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Student.clearcontrol(this);
+            Student.EDcontrols(this, true);
+        }
     }
 }

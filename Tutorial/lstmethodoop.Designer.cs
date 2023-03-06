@@ -44,6 +44,7 @@
             label1 = new Label();
             button2 = new Button();
             button1 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // txtrollno
@@ -182,11 +183,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button5
+            // 
+            button5.Location = new Point(465, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 62;
+            button5.Text = "Start";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // lstmethodoop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(561, 313);
+            Controls.Add(button5);
             Controls.Add(txtrollno);
             Controls.Add(label6);
             Controls.Add(button4);
@@ -205,6 +217,7 @@
             Controls.Add(button1);
             Name = "lstmethodoop";
             Text = "lstmethodoop";
+            Load += lstmethodoop_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -227,5 +240,6 @@
         private Label label1;
         private Button button2;
         private Button button1;
+        private Button button5;
     }
 }

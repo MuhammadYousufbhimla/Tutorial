@@ -77,6 +77,21 @@ namespace Tutorial
                     ctrl.Text = "";
                 }
             }
+
+        }
+        public static void EDcontrols(Control MainContorl,bool IsEnable)
+        {
+            foreach (Control ctrl in MainContorl.Controls) 
+            {
+                if (ctrl.HasChildren)
+                {
+                    EDcontrols(ctrl, IsEnable);
+                }
+                if (ctrl.Tag != "No" && ctrl.GetType() == typeof(TextBox))
+                {
+                    ctrl.Enabled = IsEnable;
+                }
+            }
         }
     }
 }
